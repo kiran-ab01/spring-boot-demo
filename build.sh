@@ -16,7 +16,7 @@ echo "${IMAGE_TAG}" > build/build_tag.txt
 echo "${IMAGE_URI}" > build/image_uri.txt
 
 # Build Java project
-cd your-spring-boot-project/
+
 ./mvnw clean package -DskipTests
 
 cp target/*.jar ../docker/build/
