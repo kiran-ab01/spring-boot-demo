@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-cd ${CODEBUILD_SRC_DIR:-.}
 
 export SHORT_COMMIT_ID=$(git rev-parse --short HEAD || echo "local")
 export IMAGE_TAG="build-${SHORT_COMMIT_ID}"
