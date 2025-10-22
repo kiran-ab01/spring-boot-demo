@@ -24,7 +24,7 @@ mkdir -p ../docker/build
 cp target/*.jar ../docker/build/
 
 # Docker build & push
-cd /docker/docker
+cd ../docker
 docker build -t ${IMAGE_URI} .
 echo "Image built: ${IMAGE_URI}"
 
