@@ -26,7 +26,7 @@ cp target/*.jar docker/build/
 
 # Docker build & push
 cd docker
-docker build -t ${IMAGE_URI} .
+docker build -f docker/Dockerfile -t ${IMAGE_URI} .
 echo "Image built: ${IMAGE_URI}"
 
 # Push to ECR (mock for now)
