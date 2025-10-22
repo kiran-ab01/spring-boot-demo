@@ -19,6 +19,8 @@ echo "${IMAGE_URI}" > build/image_uri.txt
 chmod +x mvnw
 ./mvnw clean package -DskipTests
 
+echo "== Copy jar file to Docker build folder =="
+mkdir -p ../docker/build
 cp target/*.jar ../docker/build/
 
 # Docker build & push
