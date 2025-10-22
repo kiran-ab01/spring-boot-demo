@@ -31,6 +31,7 @@ echo "Image built: ${IMAGE_URI}"
 
 # Push to ECR (mock for now)
 echo "Pretending to push to: ${IMAGE_URI}"
-# docker push ${IMAGE_URI}
+echo "pusssing,,,,"
+docker push ${IMAGE_URI}
 
 cd ..
